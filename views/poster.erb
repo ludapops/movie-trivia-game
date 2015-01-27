@@ -1,0 +1,23 @@
+<html>
+	<head>
+		<title>Beautiful Movies</title>
+		<link rel="stylesheet" href="poster.css">
+	</head>
+	<body>
+		<div class="header"><h2>Gallery</h2></div>
+
+	<% if @error %>
+			<p><%= @error %></p>
+	<% end %>
+
+	<%	@movies.each do |url| %>
+		<img src="<%= url %>" onclick="alert('Oh no You did not say the magic words')" style="width: 200px;"> 
+		
+
+	<%	end %>
+	
+
+
+
+	</body>
+</html>	
